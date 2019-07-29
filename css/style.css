@@ -1,0 +1,58 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #fellows .card {
+        text-align: center;
+        cursor: pointer;
+    }
+    #fellows .card-body {
+        position: absolute;
+        width: 100%;
+    }
+    #fellows .card-body p, #fellows .card-body h5 { position: relative; }
+    #fellows .card p {
+        margin: auto;
+        width: 80%;
+        padding: 1em 0em;
+        bottom:1em;
+        background-color: #fff;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        opacity: .81;
+    }
+    #fellows .card h5 {
+        top: 4.3em;
+        font-weight: bold;
+        font-size: 1.5em;
+        transition: all ease .5s;
+    }
+    #fellows .card img {
+        opacity: .5;
+        transition: all ease .5s;
+    }
+    #fellows .card:hover img { opacity: 1;} 
+    #fellows .card:hover h5 { 
+        top:10.2em;
+        font-size: 1em;
+    }
+    #fellows .container .row div:nth-child(1) .card:hover h5, #fellows .container .row div:nth-child(2) .card:hover h5 { color: #fff; }
+    #fellows .container div:last-child .card:hover h5 { color: #000; }
+    #fellows .card:hover p {
+        z-index: -1;
+    }
+}
