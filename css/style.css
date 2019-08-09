@@ -12,6 +12,19 @@ h1, h2, h2.h4, h3, h4, h5, h6,
 @media (max-width: 575.98px) {
 
 }
+/* HEADER */
+header .navbar {
+    background-color: #fe661d;
+}
+.navbar-brand img { width: 210px; }
+.navbar-light .navbar-nav .nav-link { 
+    color: #fff;
+    font-size: 0.875em;
+}
+.navbar-light .navbar-nav .active > .nav-link {
+    color: #fff;
+    border-bottom: 3px solid;
+}
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
