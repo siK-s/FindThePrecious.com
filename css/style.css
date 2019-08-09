@@ -1,3 +1,13 @@
+/* Police des titres */
+@font-face {
+    font-family: 'Aniron';
+    src: url('../fonts/pete-klassen_aniron/Aniron-7BaP.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h1, h2, h2.h4, h3, h4, h5, h6,
+.nav-link, form, .card-header, .card table th, footer { font-family: 'Aniron'; }
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
