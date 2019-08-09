@@ -8,6 +8,16 @@
 }
 h1, h2, h2.h4, h3, h4, h5, h6,
 .nav-link, form, .card-header, .card table th, footer { font-family: 'Aniron'; }
+/* Police des textes */
+@font-face {
+    font-family: 'Party Business';
+    src: url('../fonts/party-business/partybusiness.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'Party Business';
+}
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
@@ -25,6 +35,18 @@ header .navbar {
     color: #fff;
     border-bottom: 3px solid;
 }
+/* SLIDER */
+.carousel-caption {
+    top: 33%;
+}
+.carousel-inner h5 { 
+    font-size: 2.5rem;
+    line-height: 3; 
+}
+.carousel-inner p {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+ }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
