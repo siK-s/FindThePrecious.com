@@ -68,12 +68,14 @@ header .navbar {
 /* personnages */
 #fellows .card {
     border: 3px solid #000;
+    background-color: #000;
 }
-#fellows .card p span.orange, #fellows .card.dead h5 {
+#fellows .card h5 { color: #fff; }
+#fellows .card p span.orange {
     color: #fe661d;
 }
 #fellows .card.dead .card-text { display: none; }
-#fellows .card.dead h5, #fellows .container div .card.dead:hover h5 {
+#fellows .card.dead h5, #fellows .card.dead:hover h5 {
     color: #fff;
     text-decoration-line: line-through;
     -webkit-text-decoration-color: #fe661d;
@@ -81,9 +83,9 @@ header .navbar {
     -ms-text-decoration-color: #fe661d;
     text-decoration-color: #fe661d;
     top: 6.3em;
-    font-weight: bold;
     font-size: 1.5em;
 }
+#fellows .card.dead:hover img { opacity: .5; }
 #fellows .card-footer {
     background-color: #000;
     color: #fff;
@@ -91,7 +93,15 @@ header .navbar {
     -moz-border-radius: 0;
     border-radius: 0;
 }
-
+/* CONTACT */
+#contact {
+    background: url('../img/bg_dark.png');
+}
+#contact h2 { color: #fff; }
+/* FOOTER */
+footer {
+    background-color: #fe661d;
+}
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     
@@ -127,7 +137,6 @@ header .navbar {
     }
     #fellows .card h5 {
         top: 6.3em;
-        font-weight: bold;
         font-size: 1.5em;
         transition: all ease .5s;
     }
@@ -137,11 +146,10 @@ header .navbar {
     }
     #fellows .card:hover img { opacity: 1;} 
     #fellows .card:hover h5 { 
-        top:10.2em;
+        top: 14em;
         font-size: 1em;
+        /* color: #000; */
     }
-    #fellows .container .row div:nth-child(1) .card:hover h5, #fellows .container .row div:nth-child(2) .card:hover h5 { color: #fff; }
-    #fellows .container div:last-child .card:hover h5 { color: #000; }
     #fellows .card:hover p {
         z-index: -1;
     }
