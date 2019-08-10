@@ -65,6 +65,32 @@ header .navbar {
     -moz-border-radius: 0;
     border-radius: 0;
 }
+/* personnages */
+#fellows .card {
+    border: 3px solid #000;
+}
+#fellows .card p span.orange, #fellows .card.dead h5 {
+    color: #fe661d;
+}
+#fellows .card.dead .card-text { display: none; }
+#fellows .card.dead h5, #fellows .container div .card.dead:hover h5 {
+    color: #fff;
+    text-decoration-line: line-through;
+    -webkit-text-decoration-color: #fe661d;
+    -moz-text-decoration-color: #fe661d;
+    -ms-text-decoration-color: #fe661d;
+    text-decoration-color: #fe661d;
+    top: 6.3em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#fellows .card-footer {
+    background-color: #000;
+    color: #fff;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -81,6 +107,7 @@ header .navbar {
     #fellows .card {
         text-align: center;
         cursor: pointer;
+        border: 3px solid #000;
     }
     #fellows .card-body {
         position: absolute;
@@ -99,7 +126,7 @@ header .navbar {
         opacity: .81;
     }
     #fellows .card h5 {
-        top: 4.3em;
+        top: 6.3em;
         font-weight: bold;
         font-size: 1.5em;
         transition: all ease .5s;
