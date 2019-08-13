@@ -13,7 +13,10 @@
     font-family: 'Tengwar Annatar';
     src: url('../fonts/tengwar_annatar/tngani.ttf');
 }
-body { font-family: 'Party Business'; }
+body { 
+    font-family: 'Party Business';
+    font-size: 18px;
+}
 h1, h2, h2.h4, h3, h4, h5, h6,
 .nav-link, form, .card-header, .card table th, footer { font-family: 'Aniron'; }
 .title:before, .title:after {
@@ -41,12 +44,12 @@ h1, h2, h2.h4, h3, h4, h5, h6,
     background-color: #fff;
     box-shadow: 3px 3px 3px #444;
 }
-#army .btn { font-size: .875em;}
+#army .btn { font-size: .875rem;}
 /* HEADER */
 .navbar-brand img { width: 210px; }
 .navbar-light .navbar-nav .nav-link { 
     color: #fff;
-    font-size: 0.875em;
+    font-size: 0.875rem;
 }
 .navbar-light .navbar-nav .active > .nav-link {
     color: #fff;
@@ -77,6 +80,15 @@ h1, h2, h2.h4, h3, h4, h5, h6,
     -moz-border-radius: 0;
     border-radius: 0;
 }
+.nav-pills .nav-link.active::before, .nav-pills .nav-link.active::after {
+    font-family: 'Tengwar Annatar';
+    content: "b";
+    font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
+}
+.nav-pills .nav-link.active::before { right: 5px; }
+.nav-pills .nav-link.active::after { left: 5px; }
 /* personnages */
 #fellows .card {
     border: 3px solid #000;
@@ -94,7 +106,7 @@ h1, h2, h2.h4, h3, h4, h5, h6,
     width: 90%;
     padding: .5em;
     bottom:1em;
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 1.2;
     background-color: #fff;
     -webkit-border-radius: 3px;
@@ -104,7 +116,7 @@ h1, h2, h2.h4, h3, h4, h5, h6,
 }
 #fellows .card img { opacity: .5; }
 #fellows .card h5 { 
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-family: 'Party Business';
     top: 5.2em;
 }
@@ -125,14 +137,14 @@ h1, h2, h2.h4, h3, h4, h5, h6,
     -moz-text-decoration-color: #fe661d;
     -ms-text-decoration-color: #fe661d;
     text-decoration-color: #fe661d;
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 #fellows .card-footer {
     background-color: #000;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
-    font-size: 1.6em;
+    font-size: 1.6rem;
 }
 /* Section RING */
 #ring .card { 
@@ -151,7 +163,7 @@ h1, h2, h2.h4, h3, h4, h5, h6,
     border-bottom-left-radius: 0;
 }
 #ring .table th { border-top: 0; }
-#ring .card-text, #ring .card-title { font-size: 1.6em; }
+#ring .card-text, #ring .card-title { font-size: 1.6rem; }
 /* CONTACT */
 
 /* FOOTER */
@@ -180,7 +192,7 @@ header .navbar, #ring .card-header, footer { background-color: #fe661d; }
     .carousel-caption { top: 18%; }
     .carousel-inner h5 { line-height: 1; } 
     #fellows .card p { 
-        font-size: 1.5em;
+        font-size: 1.5rem;
         bottom: 2em;
     }
     #fellows .card h5, #fellows .card.dead:hover h5 { top: 3.5em; }
@@ -191,7 +203,7 @@ header .navbar, #ring .card-header, footer { background-color: #fe661d; }
     #fellows .card:hover img { opacity: 1; } 
     #fellows .card:hover h5 { 
         top: 8em;
-        font-size: 2em;
+        font-size: 2rem;
     }
     #fellows .card:hover p { z-index: -1; }
 }
