@@ -41,6 +41,7 @@ h1, h2, h2.h4, h3, h4, h5, h6,
     background-color: #fff;
     box-shadow: 3px 3px 3px #444;
 }
+#army .btn { font-size: .875em;}
 /* HEADER */
 .navbar-brand img { width: 210px; }
 .navbar-light .navbar-nav .nav-link { 
@@ -168,11 +169,11 @@ header .navbar, #ring .card-header, footer { background-color: #fe661d; }
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
+    
 }
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-    
+    #army .btn { font-size: 1rem; }
 }
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
