@@ -26,6 +26,21 @@ h1, h2, h2.h4, h3, h4, h5, h6,
 }
 .title:before { margin-right: 9px; }
 .title:after { margin-left: 9px; }
+/* button */
+.btn.btn-primary {
+    background-color: #202022;
+    color: #fe661d;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    box-shadow: 0px 3px 3px #202022;
+}
+#reward .btn.btn-primary, #contact .btn.btn-primary {
+    background-color: #fff;
+    box-shadow: 3px 3px 3px #444;
+}
 /* HEADER */
 .navbar-brand img { width: 210px; }
 .navbar-light .navbar-nav .nav-link { 
@@ -65,11 +80,8 @@ h1, h2, h2.h4, h3, h4, h5, h6,
 #fellows .card {
     border: 3px solid #000;
     background-color: #000;
-}
-#fellows .card {
     text-align: center;
     cursor: pointer;
-    border: 3px solid #000;
 }
 #fellows .card-body {
     position: absolute;
@@ -81,27 +93,27 @@ h1, h2, h2.h4, h3, h4, h5, h6,
     width: 90%;
     padding: .5em;
     bottom:1em;
+    font-size: 2em;
     line-height: 1.2;
     background-color: #fff;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    opacity: .81;
+    opacity: .8;
 }
-#fellows .card h5 {
-    font-size: 1.5em;
-    transition: all ease .5s;
+#fellows .card img { opacity: .5; }
+#fellows .card h5 { 
+    font-size: 2.5em;
+    font-family: 'Party Business';
+    top: 5.2em;
 }
-#fellows .card img {
-    opacity: .5;
-    transition: all ease .5s;
+#fellows .card.dead:hover img { opacity: .5; }
+#fellows .card.dead:hover h5 { top: 5.2em; }
+#fellows .card.dead p {
+    background-color: transparent;
+    font-size: 2.5em;
 }
-#fellows .card p { 
-    font-size: 2em;
-}
-#fellows .card p span.orange { color: #fe661d; }
-#fellows .card h5, #fellows .card.dead:hover h5 { top: 8em; }
-#fellows .card.dead .card-text { display: none; }
+#fellows .card.dead:hover p { z-index: 1; }
 #fellows .card.dead h5, #fellows .card.dead:hover h5 {
     color: #fff;
     -webkit-text-decoration-line: line-through;
@@ -112,29 +124,47 @@ h1, h2, h2.h4, h3, h4, h5, h6,
     -moz-text-decoration-color: #fe661d;
     -ms-text-decoration-color: #fe661d;
     text-decoration-color: #fe661d;
-    font-size: 1.5em;
+    font-size: 2.5em;
 }
-#fellows .card.dead:hover img { opacity: .5; }
 #fellows .card-footer {
     background-color: #000;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
+    font-size: 1.6em;
 }
-/* Section REWARD */
-
+/* Section RING */
+#ring .card { 
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 3px solid #fe661d;
+    border-left: 0;
+    -webkit-border-radius: .25em;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius: .25em;
+    -moz-border-radius-bottomright: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-radius: .25em;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#ring .table th { border-top: 0; }
+#ring .card-text, #ring .card-title { font-size: 1.6em; }
 /* CONTACT */
 
 /* FOOTER */
 
 /* White text */
-#fellows .card h5, #fellows .card-footer, #reward, #contact h2 { color: #fff; }
+#fellows .card h5, #fellows .card-footer, #reward, #ring .title, #ring .card-header, #contact h2 { color: #fff; }
+/* Orange text */
+.orange { color: #fe661d; }
 /* Orange background */
-header .navbar, footer { background-color: #fe661d; }
+header .navbar, #ring .card-header, footer { background-color: #fe661d; }
 /* Dark bacground */
-#reward, #contact { background: url('../img/bg_dark.png'); }
+#reward,#ring, #contact { background: url('../img/bg_dark.png'); }
 /* Light background */
-#fellows, #hunters { background: url('../img/bg_light.png'); }
+#fellows, #hunters, #army { background: url('../img/bg_light.png'); }
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -145,16 +175,22 @@ header .navbar, footer { background-color: #fe661d; }
     
 }
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) { 
-
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .carousel-caption { top: 18%; }
+    .carousel-inner h5 { line-height: 1; } 
+    #fellows .card p { 
+        font-size: 1.5em;
+        bottom: 2em;
+    }
+    #fellows .card h5, #fellows .card.dead:hover h5 { top: 3.5em; }
 }
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-        #fellows .card:hover img { opacity: 1;} 
+    #fellows .card h5, #fellows .card img { transition: all ease .5s; }
+    #fellows .card:hover img { opacity: 1; } 
     #fellows .card:hover h5 { 
-        top: 15em;
-        font-size: 1.2em;
-        /* color: #000; */
+        top: 8em;
+        font-size: 2em;
     }
     #fellows .card:hover p { z-index: -1; }
 }
