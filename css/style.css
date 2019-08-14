@@ -167,7 +167,7 @@ h1, h2, h2.h4, h3, h4, h5, h6,
 /* CONTACT */
 
 /* FOOTER */
-
+footer li { padding: .7em 0;}
 /* White text */
 #fellows .card h5, #fellows .card-footer, #reward, #ring .title, #ring .card-header, #contact h2 { color: #fff; }
 /* Orange text */
