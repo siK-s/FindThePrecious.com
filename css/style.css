@@ -44,7 +44,7 @@ h1, h2, h2.h4, h3, h4, h5, h6,
     background-color: #fff;
     box-shadow: 3px 3px 3px #444;
 }
-#army .btn { font-size: .875rem;}
+#army .btn { font-size: .875rem; }
 /* HEADER */
 .navbar-brand img { width: 210px; }
 .navbar-light .navbar-nav .nav-link { 
@@ -95,6 +95,7 @@ h1, h2, h2.h4, h3, h4, h5, h6,
     background-color: #000;
     text-align: center;
     cursor: pointer;
+    overflow: hidden;
 }
 #fellows .card-body {
     position: absolute;
